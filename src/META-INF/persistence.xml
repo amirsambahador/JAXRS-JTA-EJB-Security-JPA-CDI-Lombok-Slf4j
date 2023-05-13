@@ -1,0 +1,22 @@
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             version="1.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+       http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+    <!-- Bahador, Amirsam-->
+    <persistence-unit name="DB_CONNECTION" transaction-type="JTA">
+
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+        <jta-data-source>JTA-Connection</jta-data-source>
+        <non-jta-data-source>Non-JTA-Connection</non-jta-data-source>
+
+        <properties>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>

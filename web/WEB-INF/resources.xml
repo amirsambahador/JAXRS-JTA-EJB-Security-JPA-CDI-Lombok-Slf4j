@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!-- Bahador, Amirsam-->
+    <Resource id="JTA-Connection" type="DataSource">
+        JdbcDriver oracle.jdbc.driver.OracleDriver
+        JdbcUrl jdbc:oracle:thin:@localhost:1521/xepdb1
+        UserName j2os
+        Password myjava123
+        maxIdle 5
+        maxActive 10
+        JtaManaged true
+    </Resource>
+    <Resource id="Non-JTA-Connection" type="DataSource">
+        JdbcDriver oracle.jdbc.driver.OracleDriver
+        JdbcUrl jdbc:oracle:thin:@localhost:1521/xepdb1
+        UserName j2os
+        Password myjava123
+        maxIdle 5
+        maxActive 10
+        JtaManaged false
+    </Resource>
+</resources>

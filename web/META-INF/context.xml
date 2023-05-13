@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <!-- Bahador, Amirsam-->
+    <Realm className="org.apache.catalina.realm.DataSourceRealm"
+           dataSourceName="Non-JTA-Connection"
+           userTable="USERS"
+           userNameCol="username"
+           userCredCol="password"
+           userRoleTable="USERS_ROLES"
+           roleNameCol="role_name"/>
+</Context>
